@@ -22,7 +22,7 @@ public class PickUp : MonoBehaviour
         item.transform.parent = tempParent.transform;
     }
 
-     void OnMouseUp()
+    void OnMouseUp()
     {
         item.GetComponent<Rigidbody>().useGravity = true;
         item.GetComponent<Rigidbody>().isKinematic = false;
