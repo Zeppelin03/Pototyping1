@@ -7,12 +7,13 @@ public class PickUp : MonoBehaviour
 {
     public GameObject item;
     public GameObject tempParent;
-    public Transform guide;
+    public Transform guide, original;
   
 
     void Start()
     {
         item.GetComponent<Rigidbody>().useGravity = true;
+        original = this.transform;
     }
 
 
